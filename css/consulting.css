@@ -1,0 +1,142 @@
+
+
+/* ///////////// */
+/* header */
+/* ///////////// */
+
+header ul {
+  padding-left: 200px;
+}
+
+
+/* main */
+.container {
+  background-color: white;
+  width: 1000px;
+  height: 6125px;
+  margin: 0 auto;
+  border-left: 3px solid rgb(220, 220, 220);
+  border-right: 3px solid rgb(220, 220, 220);
+}
+
+
+
+.cont-top {
+  text-align: center;
+  /* font-weight: normal; */
+}
+
+.cont-top p {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+.cont-top .mes {
+  font-size: 56px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cont-top .meseng {
+  font-size: 48px;
+  margin-top: 0;
+  color: gray;
+}
+
+.box {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+
+.box img {
+  width: 100%;
+}
+
+.box-mes {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+.box-text {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 0;
+  font-size: 18px;
+}
+
+.money {
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.mail-box  {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 23%;
+  left: 75%;
+}
+
+
+/* footer */
+
+.copy {
+  color:gray;
+  text-align: center;
+}
+
+
+
+
+/* small screens */
+
+@media (max-width: 990px){
+
+  header ul {
+    padding-left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    height: 4000px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+  .cont-top .mes {
+    font-size: 26px;
+  }
+
+  .cont-top .meseng {
+    font-size: 22px;
+  }
+
+
+  .box-mes {
+    font-size: 24px;
+   }
+
+
+   br {
+     display: none;
+   }
+
+   .box-text {
+     text-align: left;
+     width: 95%;
+     margin-left: 20px;
+     margin-right: 20px;
+   }
+
+
+   .copy {
+     font-size: 10px;
+   }
+
+}
