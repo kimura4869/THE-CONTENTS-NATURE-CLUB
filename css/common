@@ -1,0 +1,63 @@
+/* ///////////// */
+/* common */
+/* ///////////// */
+/* フォント導入 */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+
+/* 横揺れの回避 */
+html {
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: black;
+}
+
+header a {
+  font-size: 50px;
+  color:white;
+  text-decoration: none;
+  transition: opacity 0.5s;
+  font-family: 'Vollkorn', serif;
+}
+
+header a:hover {
+  opacity:0.6;
+}
+
+header li {
+  display: inline-block;
+}
+
+header ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
