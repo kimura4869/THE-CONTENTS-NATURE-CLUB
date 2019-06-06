@@ -1,0 +1,402 @@
+
+
+/* ///////////// */
+/* header */
+/* ///////////// */
+header ul {
+  padding-left: 200px;
+}
+
+
+
+
+/* main */
+
+ .container {
+  background-color: white;
+  width: 1000px;
+  height: 2950px;
+  margin: 0 auto;
+  border-left: 3px solid rgb(220, 220, 220);
+  border-right: 3px solid rgb(220, 220, 220);
+}
+
+.cont-top {
+  text-align: center;
+}
+
+.cont-top p {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+.cont-top .mes {
+  font-size: 56px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cont-top .meseng {
+  font-size: 48px;
+  margin-top: 0;
+  color: gray;
+}
+
+.clearfix {
+  width: 100%;
+}
+
+
+.img {
+  width: 100%;
+  margin-top: 0 ;
+}
+
+.txt {
+  width: 55%;
+  font-size: 18px;
+  margin-top: 0 ;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+/*	contetns02
+/*---------------------------------	*/
+#contents02 {
+  position:relative;
+  background:url(../img/img_guide_02.jpg) no-repeat;
+  width:100%;
+  height:550px;
+
+  color: white;
+}
+
+#contents02 .box {
+  position:absolute;
+  top:36px;
+  left:20px;
+  width:470px;
+  height:450px;
+  padding:20px 10px;
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+#contents02 .txt {
+  width: 100%;
+  margin-bottom:1.8em;
+}
+
+
+#contents02 .box p {
+  margin-bottom:1.8em;
+}
+
+#contents02 h2 {
+  padding-left: 10%;
+}
+
+
+/*	contetns04
+/*---------------------------------	*/
+#contents04 {
+  position:relative;
+  background:url(../img/img_guide_04.jpg) no-repeat;
+  width:100%;
+  height:550px;
+
+  color: white;
+}
+#contents04 .box {
+  position:absolute;
+  top:36px;
+  right:20px;
+  width:516px;
+  height:430px;
+  padding:30px 10px;
+   background-color: rgba(169, 169, 169, 0.5);
+}
+
+#contents04 .txt {
+  width: 100%;
+  margin-bottom:1.8em;
+}
+
+#contents04 .box p {
+  margin-bottom:1.8em;
+}
+
+#contents04 h2 {
+  padding-left: 10%;
+}
+
+/*	contetns05
+/*---------------------------------	*/
+#contents05 {
+  position:relative;
+  background:url(../img/img_guide_05.jpg) no-repeat;
+  width:100%;
+  height:550px;
+
+  color: white;
+}
+#contents05 .box {
+  position:absolute;
+  top:36px;
+  left:20px;
+  width:490px;
+  height:300px;
+  padding:30px 10px;
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+#contents05 .box h2 {
+  text-align:left;
+}
+
+#contents05 .txt {
+  width: 100%;
+  margin-bottom:1.8em;
+}
+
+#contents05 .box p {
+  margin-bottom:1.8em;
+}
+
+#contents05 h2 {
+  padding-left: 10%;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+.box-mes {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+.mimg {
+  width: 100%;
+}
+
+.money {
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.mail-box  {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 23%;
+  left: 75%;
+}
+
+
+
+/* footer */
+
+.copy {
+  color:gray;
+  text-align: center;
+}
+
+
+
+/* small screens */
+
+@media (max-width: 990px){
+
+  br {
+    display: none;
+  }
+
+  .cont-top .mes {
+    font-size: 26px;
+  }
+
+  .cont-top .meseng {
+    font-size: 22px;
+  }
+
+
+/* モニタが小さくなった瞬間に最大サイズをピクセルで指定してやったのち、
+その後はモニタサイズに合わせて収縮させていく最強の方法 */
+  .clearfix .mid-img {
+    width: 910px;
+    height: 686px;
+
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  /*	contetns01
+  /*---------------------------------	*/
+
+  #contents01 .txt{
+    width: 80%;
+    /* padding-left: 40px; */
+margin: 0 auto;
+  }
+
+
+
+  /*	contetns02
+  /*---------------------------------	*/
+
+  #contents02 {
+    position:relative;
+    background:url(../img/img_guide_02.jpg) no-repeat;
+    /* 縦横比を保ち、画像を最大まで大きくする */
+    background-size: contain;
+    width:auto;
+    height:auto;
+
+    color: black;
+  }
+
+  #contents02 .box {
+    position: static;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding:60% 0 0;
+
+  background-color: rgba(169, 169, 169, 0);
+  }
+
+
+    #contents02 .box h2 {
+      font-weight: normal;
+    }
+
+    #contents02 .box p {
+      width:90%;
+      /* margin:0 auto 1.8em; */
+    }
+
+
+
+  /*	contetns04
+  /*---------------------------------	*/
+
+  #contents04 {
+    position:relative;
+    background:url(../img/img_guide_04.jpg) no-repeat;
+    /* 縦横比を保ち、画像を最大まで大きくする */
+    background-size: contain;
+    width:auto;
+    height:auto;
+
+    color: black;
+  }
+
+  #contents04 .box {
+    position: static;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding:60% 0 0;
+
+    background-color: rgba(169, 169, 169, 0);
+  }
+
+  #contents04 .box h2 {
+    font-weight: normal;
+  }
+
+  #contents04 .box p {
+    width:90%;
+    /* margin:0 auto 1.8em; */
+  }
+
+
+  /*	contetns05
+  /*---------------------------------	*/
+  #contents05 {
+    position:relative;
+    background:url(../img/img_guide_05.jpg) no-repeat;
+    /* 縦横比を保ち、画像を最大まで大きくする */
+    background-size: contain;
+    width:auto;
+    height:auto;
+
+    color: black;
+  }
+
+  #contents05 .box {
+    position: static;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding:60% 0 0;
+    background-color: rgba(169, 169, 169, 0);
+  }
+
+  /* #contents05 .box h2 {
+    text-align:left;
+  } */
+
+  #contents05 .box h2 {
+    font-weight: normal;
+  }
+
+  #contents05 .box p {
+    width:90%;
+    /* margin:0 auto 1.2em; */
+  }
+
+
+
+  .box h2 {
+    font-size: 24px;
+  }
+
+  header ul {
+    padding-left: 0px;
+  }
+
+  .container {
+    width: 100%;
+    height: 3100px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+
+  .clearfix {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .clearfix .txt {
+    text-align: left;
+    /* padding-left: 60px; */
+  }
+
+
+   .copy {
+     font-size: 10px;
+   }
+
+}
