@@ -1,0 +1,226 @@
+
+/* ///////////// */
+/* header */
+/* ///////////// */
+
+
+header ul {
+  padding-left: 200px;
+}
+
+
+/* main */
+
+ .container {
+  background-color: white;
+  width: 1000px;
+  height: 3750px;
+  margin: 0 auto;
+  border-left: 3px solid rgb(220, 220, 220);
+  border-right: 3px solid rgb(220, 220, 220);
+}
+
+.cont-top {
+  text-align: center;
+}
+
+.cont-top p {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+
+.cont-top .mes {
+  font-size: 56px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cont-top .meseng {
+  font-size: 48px;
+  margin-top: 0;
+  color: gray;
+}
+
+.clearfix {
+  width: 100%;
+}
+
+
+.box h2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+
+.txt {
+  width: 45%;
+  float: left;
+  font-size: 18px;
+  margin-top: 0 ;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+
+.img {
+  width: 48%;
+  float: right;
+  margin-top: 0 ;
+
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.limg {
+  display: inline-block;
+  width: 30%;
+}
+
+
+.down-column {
+  margin-top: 30px;
+  /* margin-left: 20px; */
+  text-align: center;
+ }
+
+
+.down-column .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.iframe-wrapper {
+  /* background: pink; */
+  width: 75%;
+  margin: 0 auto;
+
+  padding-bottom: 56.25%;
+  height: 0;
+  position:relative;
+}
+
+iframe {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+.box-mes {
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+.mimg {
+  width: 100%;
+}
+
+.money {
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.mail-box  {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 23%;
+  left: 75%;
+}
+
+.hosoku {
+  font-size: 12px;
+  padding-left: 10%;
+}
+
+/* footer */
+
+.copy {
+  color:gray;
+  text-align: center;
+}
+
+
+
+/* small screens */
+
+@media (max-width: 990px){
+  .cont-top .mes {
+    font-size: 26px;
+  }
+
+  .cont-top .meseng {
+    font-size: 22px;
+  }
+
+
+/* モニタが小さくなった瞬間に最大サイズをピクセルで指定してやったのち、
+その後はモニタサイズに合わせて収縮させていく最強の方法 */
+  .clearfix .mid-img {
+    width: 910px;
+    height: 686px;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .box h2 {
+    font-size: 34px;
+  }
+
+  header ul {
+    padding-left: 0px;
+  }
+
+  .container {
+    width: 100%;
+    height: 4000px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+
+  .img {
+     width: 100%;
+  }
+
+  .li {
+    width: 100%;
+  }
+
+  .txt {
+    width: 80%;
+  }
+
+  .clearfix {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .clearfix .txt {
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .limg {
+    width: 100%;
+  }
+
+   .copy {
+     font-size: 10px;
+   }
+
+}
