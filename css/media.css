@@ -14,7 +14,7 @@ header ul {
  .container {
   background-color: white;
   width: 1000px;
-  height: 3750px;
+  height: 3350px;
   margin: 0 auto;
   border-left: 3px solid rgb(220, 220, 220);
   border-right: 3px solid rgb(220, 220, 220);
@@ -44,6 +44,9 @@ header ul {
   width: 100%;
 }
 
+.box {
+  margin-bottom: 70px;
+}
 
 .box h2 {
   text-align: center;
@@ -167,10 +170,14 @@ iframe {
 その後はモニタサイズに合わせて収縮させていく最強の方法 */
   .clearfix .mid-img {
     width: 910px;
-    height: 686px;
+    height: 677px;
 
     width: 100%;
     height: auto;
+  }
+
+  .box {
+    margin-bottom: 30px;
   }
 
   .box h2 {
@@ -203,6 +210,7 @@ iframe {
 
   .txt {
     width: 80%;
+    padding-left: 10%;
   }
 
   .clearfix {
@@ -212,7 +220,7 @@ iframe {
 
   .clearfix .txt {
     text-align: left;
-    padding-left: 60px;
+    /* padding-left: 60px; */
   }
 
   .limg {
