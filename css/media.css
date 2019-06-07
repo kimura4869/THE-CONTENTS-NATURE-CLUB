@@ -14,7 +14,6 @@ header ul {
  .container {
   background-color: white;
   width: 1000px;
-  height: 3350px;
   margin: 0 auto;
   border-left: 3px solid rgb(220, 220, 220);
   border-right: 3px solid rgb(220, 220, 220);
@@ -87,7 +86,6 @@ header ul {
 
 .down-column {
   margin-top: 30px;
-  /* margin-left: 20px; */
   text-align: center;
  }
 
@@ -99,7 +97,6 @@ header ul {
 
 
 .iframe-wrapper {
-  /* background: pink; */
   width: 75%;
   margin: 0 auto;
 
@@ -119,6 +116,7 @@ iframe {
 
 
 .box-mes {
+  margin-top: 30px;
   font-size: 30px;
   padding-left: 50px;
 }
@@ -166,8 +164,8 @@ iframe {
   }
 
 
-/* モニタが小さくなった瞬間に最大サイズをピクセルで指定してやったのち、
-その後はモニタサイズに合わせて収縮させていく最強の方法 */
+/* モニタが小さくなった瞬間に最大サイズをピクセルで指定したのち、
+その後はモニタサイズに合わせて収縮させていく */
   .clearfix .mid-img {
     width: 910px;
     height: 677px;
@@ -190,9 +188,7 @@ iframe {
 
   .container {
     width: 100%;
-    height: 4000px;
     margin: 0 auto;
-    border: none;
   }
 
   header a {
@@ -220,7 +216,6 @@ iframe {
 
   .clearfix .txt {
     text-align: left;
-    /* padding-left: 60px; */
   }
 
   .limg {

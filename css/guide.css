@@ -9,13 +9,12 @@ header ul {
 
 
 
-
 /* main */
 
  .container {
   background-color: white;
   width: 1000px;
-  height: 2800px;
+  /* height: 2800px; */
   margin: 0 auto;
   border-left: 3px solid rgb(220, 220, 220);
   border-right: 3px solid rgb(220, 220, 220);
@@ -49,6 +48,12 @@ header ul {
 .img {
   width: 100%;
   margin-top: 0 ;
+}
+
+
+.box h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .txt {
@@ -106,9 +111,9 @@ section {
   background:url(../img/img_guide_04.jpg) no-repeat;
   width:100%;
   height:550px;
-
   color: white;
 }
+
 #contents04 .box {
   position:absolute;
   top:36px;
@@ -139,9 +144,9 @@ section {
   background:url(../img/img_guide_05.jpg) no-repeat;
   width:100%;
   height:550px;
-
   color: white;
 }
+
 #contents05 .box {
   position:absolute;
   top:36px;
@@ -228,8 +233,8 @@ section {
   }
 
 
-/* モニタが小さくなった瞬間に最大サイズをピクセルで指定してやったのち、
-その後はモニタサイズに合わせて収縮させていく最強の方法 */
+/* モニタが小さくなった瞬間に最大サイズをピクセルで指定したのち、
+その後はモニタサイズに合わせて収縮させていく */
   .clearfix .mid-img {
     width: 910px;
     height: 686px;
@@ -246,10 +251,8 @@ section {
 
   #contents01 .txt{
     width: 80%;
-    /* padding-left: 40px; */
-margin: 0 auto;
+    margin: 0 auto;
   }
-
 
 
   /*	contetns02
@@ -262,7 +265,6 @@ margin: 0 auto;
     background-size: contain;
     width:auto;
     height:auto;
-
     color: black;
   }
 
@@ -274,8 +276,7 @@ margin: 0 auto;
     height:auto;
     margin:0 auto;
     padding:60% 0 0;
-
-  background-color: rgba(169, 169, 169, 0);
+    background-color: rgba(169, 169, 169, 0);
   }
 
 
@@ -283,12 +284,12 @@ margin: 0 auto;
       font-weight: normal;
     }
 
-    #contents02 .box p {
-      width:90%;
-      /* margin:0 auto 1.8em; */
+    #contents02 .txt {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
-
-
 
   /*	contetns04
   /*---------------------------------	*/
@@ -300,7 +301,6 @@ margin: 0 auto;
     background-size: contain;
     width:auto;
     height:auto;
-
     color: black;
   }
 
@@ -312,7 +312,6 @@ margin: 0 auto;
     height:auto;
     margin:0 auto;
     padding:60% 0 0;
-
     background-color: rgba(169, 169, 169, 0);
   }
 
@@ -320,9 +319,11 @@ margin: 0 auto;
     font-weight: normal;
   }
 
-  #contents04 .box p {
-    width:90%;
-    /* margin:0 auto 1.8em; */
+  #contents04 .txt {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
 
@@ -335,7 +336,6 @@ margin: 0 auto;
     background-size: contain;
     width:auto;
     height:auto;
-
     color: black;
   }
 
@@ -350,22 +350,16 @@ margin: 0 auto;
     background-color: rgba(169, 169, 169, 0);
   }
 
-  /* #contents05 .box h2 {
-    text-align:left;
-  } */
 
   #contents05 .box h2 {
     font-weight: normal;
   }
 
-  #contents05 .box p {
-    width:90%;
-    /* margin:0 auto 1.2em; */
-  }
-
-
-  .txt {
-      padding-left: 10px;
+  #contents05 .txt {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
 
@@ -379,9 +373,9 @@ margin: 0 auto;
 
   .container {
     width: 100%;
-    height: 2900px;
+    /* height: 2900px; */
     margin: 0 auto;
-    border: none;
+    /* border: none; */
   }
 
   header a {
