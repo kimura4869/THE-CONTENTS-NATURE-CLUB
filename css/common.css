@@ -61,3 +61,60 @@ header ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+
+/* ページトップへ移動 */
+.page-top
+{
+	margin: 0 ;
+	padding: 0 ;
+}
+
+.page-top p
+{
+	margin: 0 ;
+	padding: 0 ;
+
+	position: fixed ;
+	right: 16px ;
+	bottom: 16px ;
+}
+
+.move-page-top
+{
+	display: block ;
+	background: #e6e6fa ;
+	width: 50px ;
+	height: 50px ;
+
+	color: #000 ;
+	line-height: 50px ;
+	text-decoration: none ;
+	text-align: center ;
+
+	-webkit-transition:all 0.3s ;
+	-moz-transition:all 0.3s ;
+	transition:all 0.3s ;
+}
+
+.move-page-top:hover
+{
+	opacity: 0.85 ;
+}
+
+.page-top
+{
+	display: none ;
+}
+
+
+/*///////////////////////////////////// small screens */
+
+
+@media (max-width: 990px){
+
+  .page-top {
+  	display: block;
+  }
+
+}
