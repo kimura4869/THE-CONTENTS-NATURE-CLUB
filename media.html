@@ -131,7 +131,9 @@
           <img src="img/kakaku.jpg" class="mimg" >
         </div>
 
-
+        <div id="page-top" class="page-top">
+          <p><a id="move-page-top" class="move-page-top">▲</a></p>
+        </div>
 
         <footer>
           <div class="copy">
@@ -141,6 +143,36 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+      $(function() {
+        'use strict';
+
+      $('.your-class').slick({
+            autoplay: true,
+        　　arrows: false,
+            fade:true,
+      　});
+
+      // 上部へ移動
+      // 最上部から現在位置までの距離を取得して、変数[now]に格納
+      var now = $( window ).scrollTop() ;
+
+      // 最下部から現在位置までの距離を計算して、変数[under]に格納
+      var under = $( 'body' ).height() - ( now + $(window).height() ) ;
+
+
+      });
+
+      $( '#move-page-top' ).click(
+	       function()
+	        {
+      $( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;	           }
+           ) ;
+    </script>
 
   </body>
 
