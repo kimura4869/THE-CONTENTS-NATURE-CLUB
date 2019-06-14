@@ -14,7 +14,14 @@ header ul {
   padding-left: 20px;
 }
 
+ /* SP表示で、画像が一瞬大きく表示される現象への対処 */
+#vanish-head{
+	display:none;
+}
 
+#vanish-cont{
+	display:none;
+}
 
 /* ///////////// */
 /* main */
