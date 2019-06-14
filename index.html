@@ -28,7 +28,7 @@
     <header>
       <ul>
         <li>
-          <div class="header-logo">
+          <div class="header-logo" id="vanish-head">
             <a href="index.html">THE CONTENTS NATURE CLUB</a>
           </div>
         </li>
@@ -36,13 +36,13 @@
     </header>
 
 
-    <div class="top-img your-class">
+    <div class="top-img your-class" >
       <img src="img/top_f.jpg" alt="">
       <img src="img/top_s.jpg" alt="">
       <img src="img/top_t.jpg" alt="">
     </div>
 
-    <div class="contents">
+    <div class="contents" id="vanish-cont">
 
       <div class="container">
         <div class="cont">
@@ -112,6 +112,19 @@
 	        {
       $( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;	           }
            ) ;
+    </script>
+
+    <!-- SP表示で、画像が一瞬大きく表示される現象への対処 -->
+    <script type="text/javascript">
+        $(window).load(function() {
+    		$('#vanish-head').fadeIn(0);
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(window).load(function() {
+    		$('#vanish-cont').fadeIn(0);
+        });
     </script>
 
   </body>
